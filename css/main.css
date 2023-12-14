@@ -1,7 +1,7 @@
-/* Importation de la police externe */
-@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;300&display=swap');
 
-/* Reset des styles */
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@100;300&display=swap");
+
+/* Reset*/
 html {
   font-size: 62.5%;
 }
@@ -40,7 +40,7 @@ a {
   display: none;
 }
 
-/* Styles du thème */
+/* thème */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +95,7 @@ section p {
   font-weight: 100;
 }
 
-/* Animation sur le bouton */
+/* Animation pop-up */
 .popup {
   display: none;
   position: fixed;
@@ -145,10 +145,10 @@ section p {
   right: 0.9375rem;
   font-size: 1.25rem;
   cursor: pointer;
-  color: #007BFF;
+  color: #007bff;
 }
 
-/* Styles responsifs */
+/* responsive design */
 @media only screen and (max-width: 1200px) {
   nav img {
     width: 15rem;
@@ -219,42 +219,40 @@ section p {
     padding: 1.2rem 3rem 1.2rem 3rem;
     font-size: 1.1rem;
   }
+
   @media only screen and (max-width: 480px) {
     nav img {
       width: 8rem;
       margin-left: 3rem;
     }
-  
+
     nav ul {
       margin-right: 3rem;
     }
-  
+
     nav ul li {
       padding: 0 0.2rem;
     }
-  
+
     section {
       padding: 3rem;
     }
-  
+
     h2 {
       font-size: 2.5rem;
     }
-  
+
     section p {
       font-size: 1.5rem;
     }
-  
+
     .popup-content p {
       font-size: 1.2rem;
     }
-  
+
     .popup-label {
       padding: 1rem 2.5rem 1rem 2.5rem;
       font-size: 1rem;
     }
   }
-  
 }
-
-
