@@ -82,7 +82,7 @@ section {
 }
 
 h2 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 3.25rem;
   font-weight: lighter;
   font-size: 7rem;
 }
@@ -93,8 +93,10 @@ section p {
   color: #fff;
   font-size: 3.5rem;
   font-weight: 100;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 6rem;
 }
-
 /* Animation pop-up */
 .popup {
   display: none;
