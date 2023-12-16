@@ -1,9 +1,35 @@
 <!-- Exercice 1 : -->
-<!-- Afficher kiwi : -->
+
 <?php
+//afficher kiwi
+$messyArray = [
+"Marguerite" => "Orange",
+"Kiwi",
+7 => "Pomme",
+[
+"Prune",
+"Cerise" => "Cerise"
+]
+];
+
 echo $messyArray[0];
+?>
+
+<?php
 
 //afficher Cerise 
+
+$messyArray = [
+"Marguerite" => "Orange",
+"Kiwi",
+7 => "Pomme",
+[
+"Prune",
+"Cerise" => "Cerise"
+]
+];
+
+
 foreach($messyArray as $clé => $valeur){
     if(is_array($valeur) && array_key_exists("Cerise",$valeur)){ // la condition fait qu'on entre dans le if si Cerise existe dans le tableau
 
@@ -11,20 +37,32 @@ foreach($messyArray as $clé => $valeur){
         break; // on sort de la boucle 
     }
 }
+?>
+<?php
 
-//supprimer prune
+// supprimer prune
+$messyArray = [
+"Marguerite" => "Orange",
+"Kiwi",
+7 => "Pomme",
+[
+"Prune",
+"Cerise" => "Cerise"
+]
+];
 
 foreach($messyArray as $clé => $valeur){
     if(is_array($valeur) && in_array("Prune",$valeur)){ // la condition fait qu'on entre dans le if si on trouve Prune 
 
         unset($messyArray[$clé][array_search("Prune",$valeur)]); // ici on supprime prune
-    }
-
-    print_r($messyArray); // on affiche donc le tableau sans prune
+    }  	
 }
+        print_r($messyArray); // on affiche donc le tableau sans prune
+?>
 
 
-// <!-- exercice 2 : -->
+ <!-- exercice 2 : -->
+<?php
 
 $random_words = ["ape", "apple", "zoo", "pie", "elephant", "banana", "picnic", "eye"];
 
@@ -43,10 +81,11 @@ function comparaisonMots($a,$b){
     print_r($random_words);
 }
 
+?>
 
+<?php
 
-// exercie 3
-
+//exercice 3
 class Calcul {
 
 public function removeDoublon($array){
@@ -62,4 +101,3 @@ echo (implode(", ", $nameWithoutDoublon)); // affichage du tableau sans doublon
  
 
 ?>
-
