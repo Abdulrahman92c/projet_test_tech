@@ -75,12 +75,11 @@ function comparaisonMots($a,$b){
     }
 
     return $comparaisonlongueur;
-
-    usort($random_words,'comparaisonMots'); // ici se passe le tri de $randomwords à travers la fonction $comparaisonmots
-
-    print_r($random_words);
 }
 
+usort($random_words,'comparaisonMots'); // ici se passe le tri de $randomwords à travers la fonction $comparaisonmots
+
+print_r($random_words);
 ?>
 
 <?php
